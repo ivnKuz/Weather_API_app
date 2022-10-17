@@ -1,8 +1,30 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background: url('./background.jpeg');
+    max-width: 1080px;
+    max-height: fit-content;
+    background-size: cover;
+}
 .currentWeather{
     display: block;
+    position: relative;
+    background: url('./CurrentWeatherContainer.jpg');
+    border: 1px solid black;
+    width: 30vw;
+    border-radius: 10%;
+    left: 55%;
+    text-align: center;
+    color: rgb(242, 216, 212);
+}
+.currentWeather__iconTemp{
+    background: rgba(219, 216, 216, 0.411);
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    border-radius: 5px;
 }
 /* making temperature icon and text be on one line */
 .currentWeather__temperature{
@@ -15,11 +37,16 @@
 }
 /* making background for table, serves as border lines */
 .currentWeather__table{
-    background: rgb(112, 112, 112);
+    background: rgba(8, 8, 8, 0.411);
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /*  */
 .currentWeather__table--row td{
-    background-color: rgb(238, 238, 238);
+    background-color: transparent;
+    color: rgb(242, 216, 212);
     max-height: auto;
     max-width: 300px;
     font-size: 26px;
@@ -36,10 +63,21 @@
 
 
 /* container width 5 day forecast */
+.fiveDayWeather{
+    position: relative;
+    left: 30%;
+    color: rgb(73, 34, 80);
+}
+#forecastCity{
+    position: relative;
+    text-align: center;
+}
 .fiveDayWeather__table--container{
     display: block;
     position: relative;
-    width: 60vw;
+    text-align: center;
+    border: 3px solid rgb(116, 116, 228);
+    max-width: 60vw;
 }
 
 .fiveDayWeather__table{
@@ -48,7 +86,7 @@
 /* styling table headers for 5 day forecast */
 .fiveDayWeather__table--head{
     display: block;
-    background: rgb(175, 175, 175);
+    background: rgb(39, 209, 225);
     font-size: 26px;
     height: 40px;
     padding: 5px;
