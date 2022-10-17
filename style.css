@@ -2,7 +2,10 @@
     box-sizing: border-box;
 }
 body{
-    background: url('./background.webp');
+    background: url('./background.jpeg');
+    max-width: 1080px;
+    max-height: fit-content;
+    background-size: cover;
 }
 .currentWeather{
     display: block;
@@ -11,8 +14,7 @@ body{
     border: 1px solid black;
     width: 30vw;
     border-radius: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 55%;
     text-align: center;
     color: rgb(242, 216, 212);
 }
@@ -63,12 +65,12 @@ body{
 /* container width 5 day forecast */
 .fiveDayWeather{
     position: relative;
-    left: 20%;
+    left: 30%;
     color: rgb(73, 34, 80);
 }
 #forecastCity{
     position: relative;
-    left: 15%;
+    text-align: center;
 }
 .fiveDayWeather__table--container{
     display: block;
