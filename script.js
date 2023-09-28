@@ -34,6 +34,8 @@ let WeatherData =
 // checks if geoocordinates are loaded.
 let loaded = false;
 
+//GOTA CHANGE THIS WHOLE MESS TO CALLBACKS LEWL
+
 //getting the data from geolocation API
 function getLocation() {
 if (navigator.geolocation) {
